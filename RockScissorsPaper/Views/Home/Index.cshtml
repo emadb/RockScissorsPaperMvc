@@ -2,7 +2,27 @@
     ViewBag.Title = "Home Page";
 }
 
-<h2>@ViewBag.Message</h2>
-<p>
-    To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
-</p>
+<script type="text/javascript">
+    $(function () {
+        $('.play').click(function (evt) {
+            evt.preventDefault();
+
+            $.get($(this).attr('url'), function (data) {
+                $("#result").html(data);
+            });
+        });
+    })
+</script>
+
+
+<section id="symbols">
+    <ul>
+        <li><a href="/Home/Rock" class=".play">Rock</a> </li>
+        <li><a href="/Home/Scissors" class=".play">Scissors</a> </li>
+        <li><a href="/Home/Paper" class=".play">Paper</a> </li>
+    </ul>
+</section>
+
+<section id="result">
+User Win!
+</section>
