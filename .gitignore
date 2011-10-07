@@ -1,0 +1,16 @@
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+_ReSharper.*
+*.sln.cache
+*.xap
+*.vspcc
+*.vscc 
+*.vssscc
+[Pp]ackages/
+*.sdf
+*.log
+*.log.*
+[Tt]emp*/
+*.Publish.xml
